@@ -56,7 +56,7 @@ export default {
       const map = this.$store.state.map;
       console.log(this.$store.state.map)
       const mapsize = "350x350";
-      img.src= `https://maps.googleapis.com/maps/api/staticmap?center=${map.center.lat()},${map.center.lng()}&zoom=${map.zoom}&size=${mapsize}&maptype=${map.mapTypeId}&key=AIzaSyCBRSNTr53vaY3dREpsIQV0Jfjc18cwEOo`;
+      img.src= `https://maps.googleapis.com/maps/api/staticmap?center=${map.center.lat()},${map.center.lng()}&zoom=${map.zoom}&size=${mapsize}&maptype=${map.mapTypeId}&key=GoogleAPIKey`;
       img.crossOrigin="anonymous"
       //ここで書いたイラスト取得
       img.onload = (e) => {
